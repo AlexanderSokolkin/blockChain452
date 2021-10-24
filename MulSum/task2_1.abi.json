@@ -1,0 +1,57 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "multiplication",
+			"inputs": [
+				{"name":"num","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "add",
+			"inputs": [
+				{"name":"num","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "product",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"product","type":"uint32"}
+			]
+		},
+		{
+			"name": "sum",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"sum","type":"uint32"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"product","type":"uint32"},
+		{"name":"sum","type":"uint32"}
+	]
+}

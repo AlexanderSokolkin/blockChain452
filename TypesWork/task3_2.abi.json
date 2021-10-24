@@ -1,0 +1,100 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addTask",
+			"inputs": [
+				{"name":"name","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getNumOfOpenTasks",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint8"}
+			]
+		},
+		{
+			"name": "getTaskList",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"name","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"isDone","type":"bool"}],"name":"value0","type":"map(int8,tuple)"}
+			]
+		},
+		{
+			"name": "getTastList2",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string[]"}
+			]
+		},
+		{
+			"name": "getTaskDescription",
+			"inputs": [
+				{"name":"_key","type":"int8"}
+			],
+			"outputs": [
+				{"components":[{"name":"name","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"isDone","type":"bool"}],"name":"value0","type":"tuple"}
+			]
+		},
+		{
+			"name": "getTaskDescription2",
+			"inputs": [
+				{"name":"_key","type":"int8"}
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "deleteTask",
+			"inputs": [
+				{"name":"_key","type":"int8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "markTask",
+			"inputs": [
+				{"name":"_key","type":"int8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "key",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"key","type":"int8"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"isDone","type":"bool"}],"name":"taskList","type":"map(int8,tuple)"},
+		{"name":"keys","type":"int8[]"},
+		{"name":"key","type":"int8"}
+	]
+}
