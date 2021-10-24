@@ -1,0 +1,88 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addWeapon",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"level","type":"uint256"},
+				{"name":"cartridgesInMagazine","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getInfoAboutOwnerWeapons",
+			"inputs": [
+				{"name":"adress","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"string[]"}
+			]
+		},
+		{
+			"name": "deleteWeapon",
+			"inputs": [
+				{"name":"name","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getInfoAboutWeapon",
+			"inputs": [
+				{"name":"name","type":"string"}
+			],
+			"outputs": [
+				{"components":[{"name":"name","type":"string"},{"name":"level","type":"uint256"},{"name":"cartridgesInMagazine","type":"uint256"}],"name":"value0","type":"tuple"}
+			]
+		},
+		{
+			"name": "changeWeaponLevel",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"level","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "putUpForSale",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"price","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getWeaponList",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"level","type":"uint256"},{"name":"cartridgesInMagazine","type":"uint256"}],"name":"weaponStorage","type":"tuple[]"},
+		{"name":"weaponOwners","type":"optional(cell)"},
+		{"name":"weaponForSale","type":"optional(cell)"}
+	]
+}
