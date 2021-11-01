@@ -1,0 +1,93 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addUnit",
+			"inputs": [
+				{"name":"unit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "popUnit",
+			"inputs": [
+				{"name":"unit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getCountOfUnits",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "setDefencePower",
+			"inputs": [
+				{"name":"def","type":"int32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDefencePower",
+			"inputs": [
+				{"name":"def","type":"int32"}
+			],
+			"outputs": [
+				{"name":"value0","type":"int32"}
+			]
+		},
+		{
+			"name": "setHP",
+			"inputs": [
+				{"name":"hp","type":"int32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getHP",
+			"inputs": [
+				{"name":"hp","type":"int32"}
+			],
+			"outputs": [
+				{"name":"value0","type":"int32"}
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"attackPower","type":"int32"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"defencePower","type":"int32"},
+		{"name":"HP","type":"int32"},
+		{"name":"units","type":"address[]"},
+		{"name":"todol","type":"uint256"}
+	]
+}
