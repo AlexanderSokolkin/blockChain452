@@ -20,7 +20,7 @@ contract unit is gameObject, unitInterface {
         attackPower = power;
     }
 
-    function getAttackPower(int32 power) public returns(int32) {
+    function getAttackPower() public returns(int32) {
         tvm.accept();
         return attackPower;
     }

@@ -45,7 +45,6 @@
 		{
 			"name": "getDefencePower",
 			"inputs": [
-				{"name":"def","type":"int32"}
 			],
 			"outputs": [
 				{"name":"value0","type":"int32"}
@@ -62,7 +61,6 @@
 		{
 			"name": "getHP",
 			"inputs": [
-				{"name":"hp","type":"int32"}
 			],
 			"outputs": [
 				{"name":"value0","type":"int32"}

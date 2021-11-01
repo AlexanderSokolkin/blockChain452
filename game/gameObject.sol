@@ -17,7 +17,7 @@ contract gameObject is gameObjectInterface {
         defencePower = def;
     }
 
-    function getDefencePower(int32 def) public returns(int32) {
+    function getDefencePower() public returns(int32) {
         tvm.accept();
         return defencePower;
     }
@@ -27,12 +27,12 @@ contract gameObject is gameObjectInterface {
         HP = hp;
     }
 
-    function getHP(int32 hp) public returns(int32) {
+    function getHP() public returns(int32) {
         tvm.accept();
         return HP;
     }
 
-    function acceptAttack(int32 attackPower) public override {
+    function acceptAttack(int32 attackPower) external override {
         tvm.accept();
         if (attackPower > defencePower) {
             HP -= attackPower - defencePower;
