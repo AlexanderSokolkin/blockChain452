@@ -1,7 +1,7 @@
 pragma ton-solidity >= 0.35.0;
 pragma AbiHeader expire;
 
-import "Interfaces.sol";
+import "gameObjectInterface.sol";
 
 contract gameObject is gameObjectInterface {
     
@@ -42,7 +42,6 @@ contract gameObject is gameObjectInterface {
         }
     }
 
-    // Проверить здоровье объекта (не убит ли он)
     function checkAlive() private view returns(bool){
         tvm.accept();
         return (HP <= 0) ? false : true;

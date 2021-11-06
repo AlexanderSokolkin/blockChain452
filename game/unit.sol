@@ -2,7 +2,7 @@ pragma ton-solidity >= 0.35.0;
 pragma AbiHeader expire;
 
 import "gameObject.sol";
-import "battleStation.sol";
+import "stantionInterface.sol";
 
 contract unit is gameObject, unitInterface {
 
